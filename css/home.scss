@@ -1,0 +1,393 @@
+$main-color: #226085;
+.main-color {
+  color: $main-color;
+}
+/*
+------------------------- start home about section -------------------
+*/
+section.about {
+  .background {
+    min-height: 300px;
+    min-height: 340px;
+    border-radius: 3px;
+    width: 105%;
+    height: 100%;
+    .bg-fluid {
+      box-shadow: 0px 0px 32px -4px #a0a0a0;
+      height: 90%;
+      margin: auto;
+      position: absolute;
+      top: 5%;
+      width: 100%;
+      left: 0;
+      z-index: -1;
+    }
+    .background-1 {
+      background-image: url(../imgs/home/bump-collaboration-colleagues-1.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+
+  .button {
+    .btn {
+      background-color: $main-color !important;
+      border-color: $main-color !important;
+      padding: 0.5rem 1.5rem;
+      &:focus {
+        box-shadow: none !important;
+      }
+      .arrow-icon {
+        img {
+          width: 20px;
+          height: 10px;
+          margin-right: 1.5rem;
+        }
+      }
+    }
+  }
+  .col-md-7 {
+    background-color: #fff;
+    .heading {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -30px;
+        right: 0;
+        background-color: $main-color;
+        width: 50px;
+        height: 4px;
+        border-radius: 100px;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        right: 78px;
+        bottom: -30px;
+        background-color: $main-color;
+        width: 50px;
+        height: 4px;
+        border-radius: 100px;
+      }
+      img {
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        bottom: -37px;
+        right: 55px;
+      }
+    }
+  }
+  .box {
+    box-shadow: -10px 9px 0px 0px whitesmoke;
+    border: 1px solid whitesmoke;
+    min-height: 100%;
+    .icon {
+      img {
+        height: 50px;
+        width: 50px;
+      }
+    }
+  }
+}
+/*
+------------------------- end home about section -------------------
+*/
+
+/*
+--------------------------- start services  ---------------------
+*/
+.home-services {
+  .heading.text-center {
+    span {
+      position: relative;
+      width: 100px;
+      display: inline-block;
+      bottom: 15px;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        left: -15px;
+        background-color: $main-color;
+        width: 49%;
+        height: 4px;
+        border-radius: 100px;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        right: -15px;
+        bottom: -15px;
+        background-color: $main-color;
+        width: 49%;
+        height: 4px;
+        border-radius: 100px;
+      }
+      img {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        bottom: -23px;
+        left: 41px;
+      }
+    }
+  }
+  .slider-container {
+    width: 90%;
+    margin: auto;
+    direction: rtl;
+    .slick-track {
+      direction: rtl;
+
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      .slick-slide {
+        height: auto;
+      }
+    }
+    .slide {
+      padding: 1rem;
+      .box {
+        border: 1px solid #efefef;
+        border-radius: 5px;
+        height: 100%;
+        .heading {
+          span {
+            position: relative;
+            width: 100px;
+            display: inline-block;
+            bottom: 15px;
+            &::after {
+              content: "";
+              position: absolute;
+              bottom: -15px;
+              left: -15px;
+              background-color: $main-color;
+              width: 49%;
+              height: 4px;
+              border-radius: 100px;
+            }
+            &::before {
+              content: "";
+              position: absolute;
+              right: -15px;
+              bottom: -15px;
+              background-color: $main-color;
+              width: 49%;
+              height: 4px;
+              border-radius: 100px;
+            }
+            img {
+              width: 20px;
+              height: 20px;
+              position: absolute;
+              bottom: -23px;
+              left: 41px;
+            }
+          }
+        }
+        .img {
+          span {
+            display: inline-flex;
+            background-color: $main-color;
+            width: 6.5rem;
+            height: 6.5rem;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            img {
+              width: 4rem;
+              height: 4rem;
+            }
+          }
+        }
+      }
+    }
+    .next-arrow {
+      background-color: #fff;
+      position: absolute;
+      top: 50%;
+      right: -60px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 1px solid #eee;
+      &:focus {
+        outline: none;
+      }
+      img {
+        width: 35px;
+        height: 20px;
+      }
+    }
+    .prev-arrow {
+      background-color: #fff;
+      position: absolute;
+      top: 50%;
+      left: -60px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 1px solid #eee;
+      &:focus {
+        outline: none;
+      }
+      img {
+        width: 35px;
+        height: 20px;
+      }
+    }
+    .slick-dots li.slick-active button:before,
+    .slick-dots li button:before {
+      color: $main-color;
+    }
+  }
+  .button {
+    .btn {
+      background-color: $main-color !important;
+      border-color: $main-color !important;
+      padding: 0.5rem 1.5rem;
+      &:focus {
+        box-shadow: none !important;
+      }
+      .arrow-icon {
+        img {
+          width: 20px;
+          height: 10px;
+          margin-left: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+/*
+--------------------------- end services ---------------------
+*/
+
+/*
+--------------------------- start clients -------------------
+*/
+.clients#clients {
+  .heading.text-center {
+    span {
+      position: relative;
+      width: 100px;
+      display: inline-block;
+      bottom: 15px;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        left: -15px;
+        background-color: $main-color;
+        width: 49%;
+        height: 4px;
+        border-radius: 100px;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        right: -15px;
+        bottom: -15px;
+        background-color: $main-color;
+        width: 49%;
+        height: 4px;
+        border-radius: 100px;
+      }
+      img {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        bottom: -23px;
+        left: 41px;
+      }
+    }
+  }
+  .slider-container {
+    width: 90%;
+    margin: auto;
+    div {
+      img {
+        margin: auto;
+      }
+    }
+    .next-arrow {
+      background-color: #fff;
+      position: absolute;
+      top: 35%;
+      right: -60px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 1px solid #eee;
+      &:focus {
+        outline: none;
+      }
+      img {
+        width: 35px;
+        height: 20px;
+      }
+    }
+    .prev-arrow {
+      background-color: #fff;
+      position: absolute;
+      top: 35%;
+      left: -60px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 1px solid #eee;
+      &:focus {
+        outline: none;
+      }
+      img {
+        width: 35px;
+        height: 20px;
+      }
+    }
+    .slick-dots li.slick-active button:before,
+    .slick-dots li button:before {
+      color: $main-color;
+    }
+  }
+  .button {
+    .btn {
+      background-color: $main-color !important;
+      border-color: $main-color !important;
+      padding: 0.5rem 1.5rem;
+      &:focus {
+        box-shadow: none !important;
+      }
+      .arrow-icon {
+        img {
+          width: 20px;
+          height: 10px;
+          margin-right: 1.5rem;
+        }
+      }
+    }
+  }
+}
+/*
+--------------------------- start clients -------------------
+*/
+
+/***
+--------------------------------- responsive -------------------------
+**/
+@media (max-width: 575px) {
+  .about {
+    .background {
+      width: 100% !important;
+      position: relative;
+      .bg-fluid {
+        position: relative;
+      }
+    }
+  }
+}

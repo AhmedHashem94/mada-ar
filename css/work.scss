@@ -1,0 +1,87 @@
+$main-color: #226085;
+.main-color {
+  color: $main-color;
+}
+section.work {
+  .background {
+    .background-1 {
+      background-image: url(../imgs/home/bump-collaboration-colleagues-1.png);
+      background-size: cover;
+      background-position: center center;
+    }
+    min-height: 340px;
+    border-radius: 3px;
+    width: 105%;
+    height: 100%;
+    .bg-fluid {
+      box-shadow: 0px 0px 32px -4px #a0a0a0;
+      height: 90%;
+      margin: auto;
+      position: absolute;
+      top: 5%;
+      width: 100%;
+      left: 0;
+      z-index: -1;
+    }
+    .beside-right {
+      .box {
+        left: -20px;
+      }
+    }
+    img {
+      box-shadow: 0px 0px 32px -4px #a0a0a0;
+      height: 90%;
+      margin: auto;
+      position: absolute;
+      top: 5%;
+      width: 100%;
+    }
+  }
+  .col-md-7 {
+    background-color: #fff;
+    .content {
+      p {
+        margin-bottom: 5rem;
+      }
+    }
+    .share {
+      margin-left: 2rem;
+      position: absolute;
+      bottom: -15px;
+      .icons {
+        a {
+          &:hover {
+            text-decoration: none;
+          }
+        }
+        .icon {
+          position: relative;
+          display: inline-flex;
+          justify-content: center;
+          align-content: center;
+          align-items: center;
+          width: 25px;
+          height: 25px;
+          background-color: $main-color;
+          border-radius: 3px;
+          img {
+            max-height: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+/***
+--------------------------------- responsive -------------------------
+**/
+@media (max-width: 575px) {
+  section.work {
+    .box.background {
+      width: 100%;
+      .bg-fluid {
+        position: relative;
+      }
+    }
+  }
+}

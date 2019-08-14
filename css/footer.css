@@ -1,0 +1,82 @@
+footer {
+  padding-top: 5rem;
+  background-image: url(../imgs/footer/footer.png);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+footer ul {
+  padding-right: 0;
+}
+
+footer .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(35, 79, 106, 0.9)), to(rgba(36, 36, 36, 0.9)));
+  background: linear-gradient(180deg, rgba(35, 79, 106, 0.9) 0%, rgba(36, 36, 36, 0.9) 100%);
+}
+
+footer ul li {
+  margin: 0.5rem 0;
+}
+
+footer ul li a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-decoration: none;
+  color: #fff;
+}
+
+footer ul li a:hover {
+  text-decoration: none;
+  color: lightgray;
+}
+
+footer ul li a span.icon {
+  margin-left: 10px;
+}
+
+footer .contact-social ul {
+  padding-right: 0;
+}
+
+footer .contact-social ul li span.icon {
+  width: 25px;
+  height: 25px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  border-radius: 2px;
+  text-align: center;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+footer .contact-social ul li span.icon img {
+  max-height: 15px;
+}
+
+footer .copyright {
+  border-top: 1px solid #d0d0d0;
+  padding: 1.5rem 0 1rem 0;
+  margin-top: 3rem;
+}
+
+footer .copyright span {
+  margin-left: 1rem;
+  text-decoration: underline;
+  color: whitesmoke;
+}
+/*# sourceMappingURL=footer.css.map */

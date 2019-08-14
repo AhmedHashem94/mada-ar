@@ -1,0 +1,427 @@
+.main-color {
+  color: #226085;
+}
+
+/*
+------------------------- start home about section -------------------
+*/
+section.about .background {
+  min-height: 300px;
+  min-height: 340px;
+  border-radius: 3px;
+  width: 105%;
+  height: 100%;
+}
+
+section.about .background .bg-fluid {
+  -webkit-box-shadow: 0px 0px 32px -4px #a0a0a0;
+          box-shadow: 0px 0px 32px -4px #a0a0a0;
+  height: 90%;
+  margin: auto;
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  left: 0;
+  z-index: -1;
+}
+
+section.about .background .background-1 {
+  background-image: url(../imgs/home/bump-collaboration-colleagues-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+section.about .button .btn {
+  background-color: #226085 !important;
+  border-color: #226085 !important;
+  padding: 0.5rem 1.5rem;
+}
+
+section.about .button .btn:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+section.about .button .btn .arrow-icon img {
+  width: 20px;
+  height: 10px;
+  margin-right: 1.5rem;
+}
+
+section.about .col-md-7 {
+  background-color: #fff;
+}
+
+section.about .col-md-7 .heading {
+  position: relative;
+}
+
+section.about .col-md-7 .heading::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+  background-color: #226085;
+  width: 50px;
+  height: 4px;
+  border-radius: 100px;
+}
+
+section.about .col-md-7 .heading::before {
+  content: "";
+  position: absolute;
+  right: 78px;
+  bottom: -30px;
+  background-color: #226085;
+  width: 50px;
+  height: 4px;
+  border-radius: 100px;
+}
+
+section.about .col-md-7 .heading img {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  bottom: -37px;
+  right: 55px;
+}
+
+section.about .box {
+  -webkit-box-shadow: -10px 9px 0px 0px whitesmoke;
+          box-shadow: -10px 9px 0px 0px whitesmoke;
+  border: 1px solid whitesmoke;
+  min-height: 100%;
+}
+
+section.about .box .icon img {
+  height: 50px;
+  width: 50px;
+}
+
+/*
+------------------------- end home about section -------------------
+*/
+/*
+--------------------------- start services  ---------------------
+*/
+.home-services .heading.text-center span {
+  position: relative;
+  width: 100px;
+  display: inline-block;
+  bottom: 15px;
+}
+
+.home-services .heading.text-center span::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: -15px;
+  background-color: #226085;
+  width: 49%;
+  height: 4px;
+  border-radius: 100px;
+}
+
+.home-services .heading.text-center span::before {
+  content: "";
+  position: absolute;
+  right: -15px;
+  bottom: -15px;
+  background-color: #226085;
+  width: 49%;
+  height: 4px;
+  border-radius: 100px;
+}
+
+.home-services .heading.text-center span img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: -23px;
+  left: 41px;
+}
+
+.home-services .slider-container {
+  width: 90%;
+  margin: auto;
+  direction: rtl;
+}
+
+.home-services .slider-container .slick-track {
+  direction: rtl;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home-services .slider-container .slick-track .slick-slide {
+  height: auto;
+}
+
+.home-services .slider-container .slide {
+  padding: 1rem;
+}
+
+.home-services .slider-container .slide .box {
+  border: 1px solid #efefef;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.home-services .slider-container .slide .box .heading span {
+  position: relative;
+  width: 100px;
+  display: inline-block;
+  bottom: 15px;
+}
+
+.home-services .slider-container .slide .box .heading span::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: -15px;
+  background-color: #226085;
+  width: 49%;
+  height: 4px;
+  border-radius: 100px;
+}
+
+.home-services .slider-container .slide .box .heading span::before {
+  content: "";
+  position: absolute;
+  right: -15px;
+  bottom: -15px;
+  background-color: #226085;
+  width: 49%;
+  height: 4px;
+  border-radius: 100px;
+}
+
+.home-services .slider-container .slide .box .heading span img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: -23px;
+  left: 41px;
+}
+
+.home-services .slider-container .slide .box .img span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: #226085;
+  width: 6.5rem;
+  height: 6.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+
+.home-services .slider-container .slide .box .img span img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.home-services .slider-container .next-arrow {
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  right: -60px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #eee;
+}
+
+.home-services .slider-container .next-arrow:focus {
+  outline: none;
+}
+
+.home-services .slider-container .next-arrow img {
+  width: 35px;
+  height: 20px;
+}
+
+.home-services .slider-container .prev-arrow {
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: -60px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #eee;
+}
+
+.home-services .slider-container .prev-arrow:focus {
+  outline: none;
+}
+
+.home-services .slider-container .prev-arrow img {
+  width: 35px;
+  height: 20px;
+}
+
+.home-services .slider-container .slick-dots li.slick-active button:before,
+.home-services .slider-container .slick-dots li button:before {
+  color: #226085;
+}
+
+.home-services .button .btn {
+  background-color: #226085 !important;
+  border-color: #226085 !important;
+  padding: 0.5rem 1.5rem;
+}
+
+.home-services .button .btn:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.home-services .button .btn .arrow-icon img {
+  width: 20px;
+  height: 10px;
+  margin-left: 1.5rem;
+}
+
+/*
+--------------------------- end services ---------------------
+*/
+/*
+--------------------------- start clients -------------------
+*/
+.clients#clients .heading.text-center span {
+  position: relative;
+  width: 100px;
+  display: inline-block;
+  bottom: 15px;
+}
+
+.clients#clients .heading.text-center span::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: -15px;
+  background-color: #226085;
+  width: 49%;
+  height: 4px;
+  border-radius: 100px;
+}
+
+.clients#clients .heading.text-center span::before {
+  content: "";
+  position: absolute;
+  right: -15px;
+  bottom: -15px;
+  background-color: #226085;
+  width: 49%;
+  height: 4px;
+  border-radius: 100px;
+}
+
+.clients#clients .heading.text-center span img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: -23px;
+  left: 41px;
+}
+
+.clients#clients .slider-container {
+  width: 90%;
+  margin: auto;
+}
+
+.clients#clients .slider-container div img {
+  margin: auto;
+}
+
+.clients#clients .slider-container .next-arrow {
+  background-color: #fff;
+  position: absolute;
+  top: 35%;
+  right: -60px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #eee;
+}
+
+.clients#clients .slider-container .next-arrow:focus {
+  outline: none;
+}
+
+.clients#clients .slider-container .next-arrow img {
+  width: 35px;
+  height: 20px;
+}
+
+.clients#clients .slider-container .prev-arrow {
+  background-color: #fff;
+  position: absolute;
+  top: 35%;
+  left: -60px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #eee;
+}
+
+.clients#clients .slider-container .prev-arrow:focus {
+  outline: none;
+}
+
+.clients#clients .slider-container .prev-arrow img {
+  width: 35px;
+  height: 20px;
+}
+
+.clients#clients .slider-container .slick-dots li.slick-active button:before,
+.clients#clients .slider-container .slick-dots li button:before {
+  color: #226085;
+}
+
+.clients#clients .button .btn {
+  background-color: #226085 !important;
+  border-color: #226085 !important;
+  padding: 0.5rem 1.5rem;
+}
+
+.clients#clients .button .btn:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.clients#clients .button .btn .arrow-icon img {
+  width: 20px;
+  height: 10px;
+  margin-right: 1.5rem;
+}
+
+/*
+--------------------------- start clients -------------------
+*/
+/***
+--------------------------------- responsive -------------------------
+**/
+@media (max-width: 575px) {
+  .about .background {
+    width: 100% !important;
+    position: relative;
+  }
+  .about .background .bg-fluid {
+    position: relative;
+  }
+}
+/*# sourceMappingURL=home.css.map */

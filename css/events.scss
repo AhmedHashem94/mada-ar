@@ -1,0 +1,16 @@
+.our-events {
+  .card {
+    img {
+      border-radius: 7px;
+      box-shadow: 0px 0px 10px 0px #bbb;
+      position: relative;
+      z-index: 2;
+    }
+    border: none !important;
+    .card-body {
+      width: 90%;
+      margin: auto;
+      border: 1px solid #eee;
+    }
+  }
+}

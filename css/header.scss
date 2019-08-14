@@ -1,0 +1,290 @@
+/*
+-------------------- start home header ------------------
+*/
+ul {
+  padding: 0 !important;
+}
+$main-color: #226085;
+header {
+  height: 400px;
+  max-height: 400px;
+  &.active a {
+    color: $main-color !important;
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 10%;
+      width: 0;
+      content: "";
+      background-color: $main-color;
+      height: 3px;
+      width: 80%;
+      opacity: 1;
+    }
+  }
+}
+.home-header {
+  height: 100vh;
+  max-height: 100%;
+  background-image: url(../imgs/header/home/home-header.png);
+}
+.about-header {
+  background-image: url(../imgs/header/about/about-bg.png);
+}
+.services-header {
+  background-image: url(../imgs/header/services/services-bg.png);
+}
+.our-works-header {
+  background-image: url(../imgs/header/our-works/our-works-bg.png);
+}
+.clients-header {
+  background-image: url(../imgs/header/clients/clients-bg.png);
+}
+.events-header {
+  background-image: url(../imgs/header/events/events-bg.png);
+}
+.contact-us-header {
+  background-image: url(../imgs/header/contact-us/contact-us-bg.png);
+}
+header {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(
+      180deg,
+      rgba(35, 79, 106, 0.7) 0%,
+      rgba(36, 36, 36, 0.7) 88%
+    );
+  }
+  .icon {
+    display: inline-flex;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    img {
+      max-width: 15px;
+      max-height: 15px;
+    }
+  }
+  .social,
+  .contact {
+    display: flex;
+  }
+  nav {
+    height: 70px;
+    background-color: #fff;
+    border-radius: 3px;
+    .navbar-brand {
+      margin-left: 1rem;
+      img {
+        max-width: 100%;
+        max-height: 70px;
+      }
+    }
+    ul {
+      li {
+        user-select: none;
+        &.active a {
+          color: $main-color !important;
+          &::after {
+            position: absolute;
+            bottom: 0;
+            left: 10%;
+            width: 0;
+            content: "";
+            background-color: $main-color;
+            height: 3px;
+            width: 80%;
+            opacity: 1;
+          }
+        }
+        a {
+          padding: 1.4rem 1rem !important;
+          position: relative;
+          transition: all 0.2s ease-in-out;
+          font-weight: 600;
+
+          &::after {
+            position: absolute;
+            bottom: 0;
+            left: 10%;
+            width: 0;
+            content: "";
+            background-color: $main-color;
+            height: 3px;
+            width: 0;
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+          }
+
+          &:hover::after {
+            opacity: 1;
+            width: 80%;
+          }
+        }
+      }
+    }
+    .hamburger {
+      z-index: 9;
+    }
+  }
+  .header-content {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    .button {
+      button {
+        border-radius: 0;
+        border-width: 2px;
+        padding: 0.5rem 2rem;
+        font-weight: 500;
+        &:hover {
+          color: $main-color;
+        }
+      }
+    }
+    .home-header-form {
+      display: flex;
+      justify-content: center;
+      form {
+        background-color: #fff;
+        padding: 1rem;
+        width: 70%;
+        color: $main-color;
+        border-radius: 5px;
+        input,
+        textarea {
+          transition: all 0.5s ease-in-out;
+          background-color: #f7f7f7;
+          border: none;
+          padding: 1.5rem;
+          &:focus {
+            box-shadow: none;
+            outline: 0 none;
+          }
+          &:active {
+            border-color: $main-color !important;
+          }
+        }
+
+        .btn.btn-primary {
+          background-color: $main-color;
+          border-color: $main-color;
+        }
+      }
+    }
+  }
+}
+/* 
+-------------------------- end home header ----------------------
+*/
+
+/* 
+-------------------------- start home header responsive ----------------------
+*/
+@media (max-width: 991px) {
+  header {
+    nav {
+      width: 100%;
+      height: 60px;
+      .navbar-collapse {
+        position: absolute;
+        top: 16px;
+        left: 0;
+        width: 100%;
+      }
+      .hamburger {
+        position: absolute;
+        top: 0;
+        .hamburger-inner,
+        .hamburger-inner:after,
+        .hamburger-inner:before,
+        .hamburger.is-active .hamburger-inner,
+        .hamburger.is-active .hamburger-inner:after,
+        .hamburger.is-active .hamburger-inner:before {
+          background-color: $main-color;
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+      ul {
+        border-radius: 0 0 5px 5px;
+        position: relative;
+        background-color: #fff;
+        z-index: 9999999;
+        text-align: center;
+        li {
+          a {
+            &::after {
+              left: 50%;
+            }
+            &:hover::after {
+              left: 10%;
+            }
+          }
+        }
+      }
+    }
+    form {
+      width: 100% !important;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  header {
+    nav {
+      .navbar-brand {
+        img {
+          position: absolute;
+          top: 0;
+          max-height: 60px;
+        }
+      }
+      .hamburger {
+        left: 0;
+      }
+      ul {
+        position: relative;
+        top: 42px;
+        z-index: 9999;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    .nav-container {
+      max-width: 100%;
+      width: 100%;
+      background-color: #fff;
+      padding: 0;
+      nav {
+        .navbar-collapse {
+          top: 8px;
+        }
+        ul {
+          top: 52px;
+        }
+      }
+    }
+  }
+}
+
+/* 
+-------------------------- end home header responsive ------------------------
+*/

@@ -1,0 +1,320 @@
+/*
+-------------------- start home header ------------------
+*/
+ul {
+  padding: 0 !important;
+}
+
+header {
+  height: 400px;
+  max-height: 400px;
+}
+
+header.active a {
+  color: #226085 !important;
+}
+
+header.active a::after {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 0;
+  content: "";
+  background-color: #226085;
+  height: 3px;
+  width: 80%;
+  opacity: 1;
+}
+
+.home-header {
+  height: 100vh;
+  max-height: 100%;
+  background-image: url(../imgs/header/home/home-header.png);
+}
+
+.about-header {
+  background-image: url(../imgs/header/about/about-bg.png);
+}
+
+.services-header {
+  background-image: url(../imgs/header/services/services-bg.png);
+}
+
+.our-works-header {
+  background-image: url(../imgs/header/our-works/our-works-bg.png);
+}
+
+.clients-header {
+  background-image: url(../imgs/header/clients/clients-bg.png);
+}
+
+.events-header {
+  background-image: url(../imgs/header/events/events-bg.png);
+}
+
+.contact-us-header {
+  background-image: url(../imgs/header/contact-us/contact-us-bg.png);
+}
+
+header {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(35, 79, 106, 0.7)), color-stop(88%, rgba(36, 36, 36, 0.7)));
+  background: linear-gradient(180deg, rgba(35, 79, 106, 0.7) 0%, rgba(36, 36, 36, 0.7) 88%);
+}
+
+header .icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 2px;
+}
+
+header .icon img {
+  max-width: 15px;
+  max-height: 15px;
+}
+
+header .social,
+header .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav {
+  height: 70px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+header nav .navbar-brand {
+  margin-left: 1rem;
+}
+
+header nav .navbar-brand img {
+  max-width: 100%;
+  max-height: 70px;
+}
+
+header nav ul li {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+header nav ul li.active a {
+  color: #226085 !important;
+}
+
+header nav ul li.active a::after {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 0;
+  content: "";
+  background-color: #226085;
+  height: 3px;
+  width: 80%;
+  opacity: 1;
+}
+
+header nav ul li a {
+  padding: 1.4rem 1rem !important;
+  position: relative;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-weight: 600;
+}
+
+header nav ul li a::after {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 0;
+  content: "";
+  background-color: #226085;
+  height: 3px;
+  width: 0;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+header nav ul li a:hover::after {
+  opacity: 1;
+  width: 80%;
+}
+
+header nav .hamburger {
+  z-index: 9;
+}
+
+header .header-content {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+header .header-content .button button {
+  border-radius: 0;
+  border-width: 2px;
+  padding: 0.5rem 2rem;
+  font-weight: 500;
+}
+
+header .header-content .button button:hover {
+  color: #226085;
+}
+
+header .header-content .home-header-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .header-content .home-header-form form {
+  background-color: #fff;
+  padding: 1rem;
+  width: 70%;
+  color: #226085;
+  border-radius: 5px;
+}
+
+header .header-content .home-header-form form input,
+header .header-content .home-header-form form textarea {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background-color: #f7f7f7;
+  border: none;
+  padding: 1.5rem;
+}
+
+header .header-content .home-header-form form input:focus,
+header .header-content .home-header-form form textarea:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: 0 none;
+}
+
+header .header-content .home-header-form form input:active,
+header .header-content .home-header-form form textarea:active {
+  border-color: #226085 !important;
+}
+
+header .header-content .home-header-form form .btn.btn-primary {
+  background-color: #226085;
+  border-color: #226085;
+}
+
+/* 
+-------------------------- end home header ----------------------
+*/
+/* 
+-------------------------- start home header responsive ----------------------
+*/
+@media (max-width: 991px) {
+  header nav {
+    width: 100%;
+    height: 60px;
+  }
+  header nav .navbar-collapse {
+    position: absolute;
+    top: 16px;
+    left: 0;
+    width: 100%;
+  }
+  header nav .hamburger {
+    position: absolute;
+    top: 0;
+  }
+  header nav .hamburger .hamburger-inner,
+  header nav .hamburger .hamburger-inner:after,
+  header nav .hamburger .hamburger-inner:before,
+  header nav .hamburger .hamburger.is-active .hamburger-inner,
+  header nav .hamburger .hamburger.is-active .hamburger-inner:after,
+  header nav .hamburger .hamburger.is-active .hamburger-inner:before {
+    background-color: #226085;
+  }
+  header nav .hamburger:focus {
+    outline: none;
+  }
+  header nav ul {
+    border-radius: 0 0 5px 5px;
+    position: relative;
+    background-color: #fff;
+    z-index: 9999999;
+    text-align: center;
+  }
+  header nav ul li a::after {
+    left: 50%;
+  }
+  header nav ul li a:hover::after {
+    left: 10%;
+  }
+  header form {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  header nav .navbar-brand img {
+    position: absolute;
+    top: 0;
+    max-height: 60px;
+  }
+  header nav .hamburger {
+    left: 0;
+  }
+  header nav ul {
+    position: relative;
+    top: 42px;
+    z-index: 9999;
+  }
+}
+
+@media (max-width: 768px) {
+  header .nav-container {
+    max-width: 100%;
+    width: 100%;
+    background-color: #fff;
+    padding: 0;
+  }
+  header .nav-container nav .navbar-collapse {
+    top: 8px;
+  }
+  header .nav-container nav ul {
+    top: 52px;
+  }
+}
+
+/* 
+-------------------------- end home header responsive ------------------------
+*/
+/*# sourceMappingURL=header.css.map */

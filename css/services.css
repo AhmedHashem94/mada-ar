@@ -1,0 +1,128 @@
+.main-color {
+  color: #226085;
+}
+
+.services .background {
+  min-height: 340px;
+  border-radius: 3px;
+  width: 105%;
+  height: 100%;
+}
+
+.services .background .bg-fluid {
+  -webkit-box-shadow: 0px 0px 32px -4px #a0a0a0;
+          box-shadow: 0px 0px 32px -4px #a0a0a0;
+  height: 90%;
+  margin: auto;
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  left: 0;
+  z-index: -1;
+}
+
+.services .background .background-1 {
+  background: url(../imgs/services/services-section-bg-1.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.services .background .background-2 {
+  background: url(../imgs/services/services-section-bg-2.png);
+  background-size: cover;
+  background-position: center left;
+}
+
+.services .background .background-3 {
+  background: url(../imgs/services/services-section-bg-3.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.services .background .background-4 {
+  background: url(../imgs/services/services-section-bg-4.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.services .background .background-5 {
+  background: url(../imgs/services/services-section-bg-5.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.services .background .beside-right .box {
+  left: -20px;
+}
+
+.services .background img {
+  -webkit-box-shadow: 0px 0px 32px -4px #a0a0a0;
+          box-shadow: 0px 0px 32px -4px #a0a0a0;
+  height: 90%;
+  margin: auto;
+  position: absolute;
+  top: 5%;
+  width: 100%;
+}
+
+.services .col-md-7 .heading {
+  position: relative;
+}
+
+.services .col-md-7 .heading::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  background-color: #226085;
+  width: 40px;
+  height: 4px;
+  border-radius: 100px;
+}
+
+.services .col-md-7 .heading::before {
+  content: "";
+  position: absolute;
+  right: 70px;
+  bottom: -20px;
+  background-color: #226085;
+  width: 40px;
+  height: 4px;
+  border-radius: 100px;
+}
+
+.services .col-md-7 .heading img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: -27px;
+  right: 45px;
+}
+
+.services ul li .icon {
+  margin-left: 0.5rem;
+}
+
+.services ul li .icon img {
+  width: 15px;
+  height: 15px;
+  margin-bottom: 3px;
+}
+
+.services .beside-img {
+  background-color: #fff;
+}
+
+/***
+--------------------------------- responsive -------------------------
+**/
+@media (max-width: 575px) {
+  .services .box {
+    width: 100%;
+    position: relative;
+  }
+  .services .box .bg-fluid {
+    position: relative;
+  }
+}
+/*# sourceMappingURL=services.css.map */

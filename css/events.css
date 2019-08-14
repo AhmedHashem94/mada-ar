@@ -1,0 +1,18 @@
+.our-events .card {
+  border: none !important;
+}
+
+.our-events .card img {
+  border-radius: 7px;
+  -webkit-box-shadow: 0px 0px 10px 0px #bbb;
+          box-shadow: 0px 0px 10px 0px #bbb;
+  position: relative;
+  z-index: 2;
+}
+
+.our-events .card .card-body {
+  width: 90%;
+  margin: auto;
+  border: 1px solid #eee;
+}
+/*# sourceMappingURL=events.css.map */

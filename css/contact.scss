@@ -1,0 +1,76 @@
+$main-color: #226085;
+.main-color {
+  color: $main-color;
+}
+.contact-us {
+  .heading {
+    .icon {
+      position: relative;
+      display: flex;
+      &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        display: inline-block;
+        width: 50px;
+        height: 4px;
+        background-color: $main-color;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        right: 78px;
+        display: inline-block;
+        width: 50px;
+        height: 4px;
+        background-color: $main-color;
+      }
+      img {
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        right: 55px;
+        top: -7px;
+      }
+    }
+  }
+  .contact-details {
+    .line {
+      .icon {
+        min-width: 35px;
+        height: 35px;
+        background-color: #fff;
+        border: 1px solid $main-color;
+        border-radius: 3px;
+        img {
+          max-height: 21px;
+          max-width: 19px;
+        }
+      }
+    }
+  }
+  .contact-form {
+    background-color: #fff;
+    color: $main-color;
+    border-radius: 5px;
+    input,
+    textarea {
+      transition: all 0.5s ease-in-out;
+      background-color: #f7f7f7;
+      border: none;
+      padding: 1.5rem;
+      &:focus {
+        box-shadow: none;
+        outline: 0 none;
+      }
+      &:active {
+        border-color: $main-color !important;
+      }
+    }
+
+    .btn.btn-primary {
+      background-color: $main-color;
+      border-color: $main-color;
+    }
+  }
+}
